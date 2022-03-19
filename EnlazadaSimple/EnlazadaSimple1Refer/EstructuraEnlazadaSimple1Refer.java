@@ -18,10 +18,20 @@ public class EstructuraEnlazadaSimple1Refer {
             actual = actual.getSig();
         }
         return actual != null;
-    }/*
+    }
+    public int numVeces(int elemento){
+        int contador = 0;
+        for (Nodo actual = primero; actual != null; actual = actual.getSig()) {
+            if(actual.getElem() == elemento){
+                contador++;
+            }
+        }
+        return contador;
+    }
     public void insertarPrincipio(int elemento) {
         Nodo nuevo = new Nodo(elemento, primero);
-        nuevo = primero;
+        primero = nuevo;
         numElem++;
-    }*/
+    }
+    
 }

@@ -8,6 +8,7 @@ Nombre  | Acción
 ------------- | -------------
 `getNumElem()`  | Devuelve el número de elementos de la estructura
 `esta()` |  Devuelve verdadero si el elemento está en la estructura y falso en caso contrario
+`numVeces()` | Devuelve el número de veces que está el elemento en la lista
 `insertarFinal()`| Permite insertar un elemento en la última posición de la estructura
 `borrar()` | Permite borrar el elemento pasado como parámetro
 

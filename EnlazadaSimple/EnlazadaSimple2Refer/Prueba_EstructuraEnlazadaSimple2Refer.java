@@ -11,6 +11,7 @@ public class Prueba_EstructuraEnlazadaSimple2Refer {
         l.insertarFinal(5);
         System.out.println(l);
         System.out.format("Está el 5? %s\n",l.esta(5));
+        System.out.format("Cuantas veces está el 5? %s\n",l.numVeces(5));
         System.out.format("Está el 37? %s\n",l.esta(37));
         System.out.format("Numero de elementos: %d\n",l.getNumElem());
         l.borrar(0);
