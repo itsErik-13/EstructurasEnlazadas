@@ -1,6 +1,5 @@
-package EnlazadaSimple;
-
-import javax.sound.sampled.SourceDataLine;
+package EnlazadaSimple.EnlazadaSimple2Refer;
+import EnlazadaSimple.Nodo;
 
 public class EstructuraEnlazadaSimple2Refer {
     private Nodo primero;
@@ -23,14 +22,6 @@ public class EstructuraEnlazadaSimple2Refer {
         }
         return actual != null;
     }
-
-    public String toString() {
-        StringBuilder sb = new StringBuilder("Lista: ");
-        for (Nodo actual = primero; actual != null; actual = actual.getSig())
-            sb.append(actual.getElem()).append(" ");
-        return sb.toString();
-    }
-
     public void insertarFinal(int elemento) {
         Nodo nuevo = new Nodo(elemento, null);
         if (numElem == 0) {
@@ -76,4 +67,11 @@ public class EstructuraEnlazadaSimple2Refer {
         }
         
     }
+    public String toString() {
+        StringBuilder sb = new StringBuilder("Lista: ");
+        for (Nodo actual = primero; actual != null; actual = actual.getSig())
+            sb.append(actual.getElem()).append(" ");
+        return sb.toString();
+    }
+
 }

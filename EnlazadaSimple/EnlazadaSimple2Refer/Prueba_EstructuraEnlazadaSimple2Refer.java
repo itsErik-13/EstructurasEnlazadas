@@ -1,4 +1,4 @@
-package EnlazadaSimple;
+package EnlazadaSimple.EnlazadaSimple2Refer;
 
 public class Prueba_EstructuraEnlazadaSimple2Refer {
     public static void main(String[] args) {
