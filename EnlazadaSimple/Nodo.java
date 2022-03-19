@@ -1,3 +1,4 @@
+package EnlazadaSimple;
 public class Nodo {
     private int elemento;
     private Nodo siguiente;
