@@ -22,6 +22,15 @@ public class EstructuraEnlazadaSimple2Refer {
         }
         return actual != null;
     }
+    public int numVeces(int elemento){
+        int contador = 0;
+        for (Nodo actual = primero; actual != null; actual = actual.getSig()) {
+            if(actual.getElem() == elemento){
+                contador++;
+            }
+        }
+        return contador;
+    }
     public void insertarFinal(int elemento) {
         Nodo nuevo = new Nodo(elemento, null);
         if (numElem == 0) {
@@ -32,7 +41,6 @@ public class EstructuraEnlazadaSimple2Refer {
         ultimo = nuevo;
         numElem++;
     }
-
     public void borrar(int elemento) {
         if (numElem == 0) {
             System.out.println("No hay elementos que borrar, lista vacía");
