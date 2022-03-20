@@ -13,12 +13,14 @@ public class EnlazadaSimpleCircular {
 
     public int numVeces(int elemento) {
         int contador = 0;
-        Nodo actual = fin;
-        do {
-            if (actual.getElem() == elemento)
-                contador++;
-            actual = actual.getSig();
-        } while (actual != fin);
+        if (numElem != 0) {
+            Nodo actual = fin;
+            do {
+                if (actual.getElem() == elemento)
+                    contador++;
+                actual = actual.getSig();
+            } while (actual != fin);
+        }
         return contador;
     }
 
@@ -35,13 +37,13 @@ public class EnlazadaSimpleCircular {
         numElem++;
     }
 
-    public void borrarPrincipio(){
-        if(numElem == 0){
+    public void borrarPrincipio() {
+        if (numElem == 0) {
             System.out.println("No hay elementos que borrar.");
-        }else if(numElem == 1){
+        } else if (numElem == 1) {
             fin = null;
             numElem--;
-        }else{
+        } else {
             fin.setSig(fin.getSig().getSig());
             numElem--;
         }
